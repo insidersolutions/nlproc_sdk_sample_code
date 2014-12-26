@@ -1,8 +1,6 @@
 SemanticAnalyzer SDK Sample Java Code
 ======================
 
-Lemmatizer and Sentiment Analysis SDK sample code
-
 These code samples illustrate the usage of Lemmatizing and Sentiment Analysis SDKs 
 for the Russian language.
 
@@ -25,7 +23,7 @@ For each word, lemmatizer returns its POS tag. There can be many POS tags for a 
 If for a particular word you do not agree with the lemma and POS tag prediction, you can redefine this behaviour
 in your personal user dictionary. It is done by establishing a link with an existing word, grammatical features
 of which are the closest to your target. For instance, if to assume the lemmatizer does not recognize
-the word инет (social media slang from Internet), you define it via the linked word Интернет (Internet):
+the word инет (social media slang word from Internet), you define it via the linked word Интернет (Internet):
 
 инет\tинтернет
 
