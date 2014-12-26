@@ -12,6 +12,18 @@ Sentiment Analysis technology can be tried out in the form of API on mashape.com
 https://www.mashape.com/dmitrykey/russiansentimentanalyzer
 
 # Lemmatizer features
+
+The process of lemmatization constitutes in deriving lemma and a POS tag for a given surface form (word).
+Because Russian is highly inflectional, it is very important to derive the word lemma and use it instead of
+stem, which is more crude way of normalizing Russian.
+
+The application area of the lemmatizer is very wide:
+
+* information retrieval (we have a token filter for Lucene / Solr / Elasticsearch, contact us, if you need one)
+* sentiment analysis (read on, if you are interested in this)
+* machine translation: to avoid issues with sparse word forms space one can lemmatize them first before translating
+* your project / research
+
 ## Dictionary size
 The dictionary contains order of 100k lemmas, which translates to several million words, including
 the grammatical cases as well as polysemic (multi-meaning, homonyms) words.
@@ -30,6 +42,9 @@ the word инет (social media slang word from Internet), you define it via the
 (\t is the symbol of tabulation)
 
 # Sentiment Analyzer features
+
+Documentation in [pdf form](documentation/sentiment_analysis/russian/SemanticAnalyzer_sentiment_analysis_V2.1.1_Installation_And_Usage_Guide.pdf) in Russian is available.
+
 ## 3-way classification
 The system returns one of the following labels for a given text (or sentence): NEUTRAL, POSITIVE, NEGATIVE.
 
@@ -47,4 +62,4 @@ the system supports describing the target object with an array of object synonym
 in the given text will trigger sentiment detection algorithm.
 
 ## Sentiment detection quality control
-The quality can be controlled by overriding / introducing new sentiment words in user polarity dictionaries.
+The quality can be controlled by overriding / introducing new sentiment words in the user polarity dictionaries.
