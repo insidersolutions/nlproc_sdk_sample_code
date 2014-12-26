@@ -1,4 +1,4 @@
-nlproc_sdk_sample_code
+SemanticAnalyzer SDK Sample Java Code
 ======================
 
 Lemmatizer and Sentiment Analysis SDK sample code
