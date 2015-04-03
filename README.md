@@ -9,9 +9,11 @@ for the Russian language.
 To start using these technologies in your projects, you need to acquire the license. Get
 in touch at dk@semanticanalyzer.info
 
-Sentiment Analysis technology can be tried out in the form of API on mashape.com:
+Sentiment Analysis technology can be consumed as an API on mashape.com:
 
 https://www.mashape.com/dmitrykey/russiansentimentanalyzer
+
+Looking for English sentiment analyzer? Check this one out: https://www.mashape.com/dmitrykey/sentifindr
 
 # Lemmatizer features
 
