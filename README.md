@@ -17,6 +17,9 @@ Looking for English sentiment analyzer? Check this one out: https://www.mashape.
 
 # Lemmatizer features
 
+Documentation in pdf form in [Russian](documentation/lemmatizer/russian/Лингвистический_компонент_Лемматайзер_для_русского_языка.pdf) and in [English](documentation/lemmatizer/russian/Linguistic_component_Lemmatizer_for_the_Russian_language.pdf) is available.
+
+
 The process of lemmatization constitutes in deriving lemma and a POS tag for a given surface form (word).
 Because Russian is highly inflectional, it is very important to derive the word lemma and use it instead of
 stem, which is more crude way of normalizing Russian.
