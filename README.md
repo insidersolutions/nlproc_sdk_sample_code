@@ -13,7 +13,7 @@ Sentiment Analysis technology can be consumed as an API on mashape.com:
 
 https://www.mashape.com/dmitrykey/russiansentimentanalyzer
 
-Looking for English sentiment analyzer? Check this one out: https://www.mashape.com/dmitrykey/sentifindr
+Looking for Chinese sentiment analyzer? Check this one out: http://semanticanalyzer.info/blog/chinese-sentiment-analysis-fuxi-api/
 
 # Lemmatizer features
 
