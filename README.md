@@ -1,7 +1,7 @@
 SemanticAnalyzer SDK Sample Java Code
 ======================
 
-![logo](documentation/RobotTransparent.png)
+![logo](documentation/RobotTransparent.png = 100x100)
 
 These code samples illustrate the usage of Lemmatizing and Sentiment Analysis SDKs 
 for the Russian language.
