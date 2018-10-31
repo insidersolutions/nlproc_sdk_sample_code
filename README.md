@@ -76,3 +76,5 @@ The system for topical grouping of and search in unstructured content. Large-sca
 In order to leverage the API you need to first load textual content into it: articles, tweets, blog posts -- what have you.
 
 Use [TopicUploader](src/main/java/com/semanticanalyzer/TopicUploader.java) to load data from a MySQL DB. You need to modify settings of mybatis accordingly as well as com.semanticanalyzer.dao.ArticleEntry in accordance with your DB.
+
+Access / subscribe to the API here: https://market.mashape.com/dmitrykey/topicapi
