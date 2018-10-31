@@ -77,4 +77,4 @@ In order to leverage the API you need to first load textual content into it: art
 
 Use [TopicUploader](src/main/java/com/semanticanalyzer/TopicUploader.java) to load data from a MySQL DB. You need to modify settings of mybatis accordingly as well as com.semanticanalyzer.dao.ArticleEntry in accordance with your DB.
 
-Access / subscribe to the API here: https://market.mashape.com/dmitrykey/topicapi
+Access / subscribe to the API and check how to get searchable clusters here: https://market.mashape.com/dmitrykey/topicapi
