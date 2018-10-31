@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.semanticanalyzer.mappers.ArticleEntryMapper">
+
+    <select id="loadEntriesFromDB" resultType="com.semanticanalyzer.dao.ArticleEntry" resultMap="resultList">
+        SELECT
+        article_id,
+        url,
+        title,
+        content,
+        publication_date
+
+        FROM articles
+
+        WHERE resource_id = #{resourceId}
+
+        LIMIT 10000
+
+    </select>
+
+    <resultMap type="com.semanticanalyzer.dao.ArticleEntry" id="resultList">
+        <result column="article_id" property="id"/>
+        <result column="url" property="url"/>
+        <result column="title" property="title"/>
+        <result column="content" property="content"/>
+        <result column="publication_date" property="publicationDate"/>
+    </resultMap>
+
+</mapper>
