@@ -22,7 +22,7 @@
         <result column="article_id" property="id"/>
         <result column="url" property="url"/>
         <result column="title" property="title"/>
-        <result column="content" property="content"/>
+        <result column="content" property="description"/>
         <result column="publication_date" property="publicationDate"/>
     </resultMap>
 

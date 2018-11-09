@@ -13,8 +13,16 @@ public class ArticleEntry {
     private String id;
     private String url;
     private String title;
-    private String content;
-    private Timestamp publicationDate;
+    private String description;
+    private String publicationDate;
+
+    public ArticleEntry(String id, String url, String title, String description, Timestamp publicationDate) {
+        this.id = id;
+        this.url = url;
+        this.title = title;
+        this.description = description;
+        this.publicationDate = publicationDate.toInstant().toString();
+    }
 
     public String getId() {
         return id;
@@ -40,19 +48,19 @@ public class ArticleEntry {
         this.title = title;
     }
 
-    public String getContent() {
-        return content;
+    public String getDescription() {
+        return description;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public Timestamp getPublicationDate() {
+    public String getPublicationDate() {
         return publicationDate;
     }
 
     public void setPublicationDate(Timestamp publicationDate) {
-        this.publicationDate = publicationDate;
+        this.publicationDate = publicationDate.toInstant().toString();
     }
 }
