@@ -16,6 +16,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.json.JSONException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -52,7 +53,7 @@ public class SentimentTagger {
         try(SqlSession sqlSession = sqlSessionFactory.openSession()) {
             ArticleEntryMapper mapper = sqlSession.getMapper(ArticleEntryMapper.class);
             List<ArticleEntry> articleEntries = mapper.loadEntriesFromDB(resourceId);
-            log.info("Loaded entries from DB: " + articleEntries.size());
+            System.out.println("Loaded entries from DB: " + articleEntries.size());
             tagSentimentAndStoreInDB(articleEntries, sqlSession, resourceId);
         }
     }
@@ -107,6 +108,9 @@ public class SentimentTagger {
         } catch (UnirestException e) {
             log.error("Error while processing article={}", textId, e);
             e.printStackTrace();
+        } catch (JSONException e) {
+            log.error("Error while processing article={}", textId, e);
+            System.out.println("Error while processing article=" + textId + " " + e.getMessage());
         }
 
 
