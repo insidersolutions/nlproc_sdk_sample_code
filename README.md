@@ -72,7 +72,7 @@ in the given text will trigger sentiment detection algorithm.
 The quality can be controlled by overriding / introducing new sentiment words in the user polarity dictionaries.
 
 # Topic API
-The system for topical grouping of and search in unstructured content. Large-scale compatible: you can generate topics out of your text silos on as big a dataset as millions of texts. You create your personal data lake which is sealed with your mashape credentials.
+The system for topical grouping of and search in unstructured content. Large-scale compatible: you can generate topics out of your text silos on as big a dataset as millions of texts. You create your personal data lake which is sealed with your mashape credentials. Supports Russian, German and virtually any language -- just ask.
 In order to leverage the API you need to first load textual content into it: articles, tweets, blog posts -- what have you.
 
 Use [TopicUploader](src/main/java/com/semanticanalyzer/TopicUploader.java) to load data from a MySQL DB. You need to modify settings of mybatis accordingly as well as com.semanticanalyzer.dao.ArticleEntry in accordance with your DB.
