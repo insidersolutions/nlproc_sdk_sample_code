@@ -9,11 +9,11 @@ for the Russian language.
 To start using these technologies in your projects, you need to acquire the license. Get
 in touch at dk@semanticanalyzer.info
 
-Sentiment Analysis technology can be consumed as an API on mashape.com:
+Sentiment Analysis technology can be consumed as an API on rapidapi.com:
 
-https://market.mashape.com/dmitrykey/russiansentimentanalyzer
+https://rapidapi.com/insider-insider-default/api/russiansentimentanalyzer
 
-Looking for Chinese sentiment analyzer? Try out the Fuxi API: http://semanticanalyzer.info/blog/chinese-sentiment-analysis-fuxi-api/
+Looking for Chinese sentiment analyzer? Try out the Fuxi API: https://rapidapi.com/insider-insider-default/api/fuxiapi
 
 # Lemmatizer features
 
@@ -71,10 +71,7 @@ in the given text will trigger sentiment detection algorithm.
 ## Sentiment detection quality control
 The quality can be controlled by overriding / introducing new sentiment words in the user polarity dictionaries.
 
-# Topic API
-The system for topical grouping of and search in unstructured content. Large-scale compatible: you can generate topics out of your text silos on as big a dataset as millions of texts. You create your personal data lake which is sealed with your mashape credentials. Supports Russian, German and virtually any language -- just ask.
-In order to leverage the API you need to first load textual content into it: articles, tweets, blog posts -- what have you.
+# DocTop API
+The system for topical grouping in unstructured content. Large-scale compatible: you can generate topics out of your text silos on as big a dataset as millions of texts. Supports multiple languages: 
 
-Use [TopicUploader](src/main/java/com/semanticanalyzer/TopicUploader.java) to load data from a MySQL DB. You need to modify settings of mybatis accordingly as well as com.semanticanalyzer.dao.ArticleEntry in accordance with your DB.
-
-Access / subscribe to the API and check how to get searchable clusters here: https://market.mashape.com/dmitrykey/topicapi
+Access / subscribe to the API here: https://rapidapi.com/insider-insider-default/api/doctop
